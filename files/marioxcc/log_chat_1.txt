@@ -1,0 +1,302 @@
+vote passed: survivor-hard-basic deathmatch on depot
+The Rouge Rogue has map crc: 0x018a9e32 (server: 0x018a9e32)
+| has map crc: 0x018a9e32 (server: 0x018a9e32)
+(Pandora, Assassin) has map crc: 0x018a9e32 (server: 0x018a9e32)
+Rabid Wombat has map crc: 0x018a9e32 (server: 0x018a9e32)
+Hastrman has map crc: 0x018a9e32 (server: 0x018a9e32)
+(Assassin, Pandora) has map crc: 0x018a9e32 (server: 0x018a9e32)
+[Ghosts]:Sleeping[Yetti] has map crc: 0x018a9e32 (server: 0x018a9e32)
+Scatter >Holidays!< has map crc: 0x018a9e32 (server: 0x018a9e32)
+vz has map crc: 0x018a9e32 (server: 0x018a9e32)
+Norakam has map crc: 0x018a9e32 (server: 0x018a9e32)
+marioxcc has map crc: 0x018a9e32 (server: 0x018a9e32)
+<(Pandora, Assassin)> it is not
+|> mario <| has map crc: 0x018a9e32 (server: 0x018a9e32)
+[Ghosts]:|/-Itachi-/| has map crc: 0x018a9e32 (server: 0x018a9e32)
+<(Pandora, Assassin)> it's a tuple
+<(Pandora, Assassin)> a simple data type
+requesting game information from |..
+game information received, starting..
+| has left the game (normal, 12 players)
+* (Pandora, Assassin) is now known as ('Pandora', 'Assassin')
+<('Pandora', 'Assassin')> now it is python
+|> mario <| has left the game (normal, 11 players)
+<('Pandora', 'Assassin')> pzap!
+<(Assassin, Pandora)> pazp
+<('Pandora', 'Assassin')> pzeP*
+<vz> :O
+<(Assassin, Pandora)> sprupise
+<('Pandora', 'Assassin')> pzup
+<[Ghosts]:Sleeping[Yetti]> lol
+ahmed has joined the game [1.5.8-nix64-none] (12 players)
+<('Pandora', 'Assassin')> argh!
+<(Assassin, Pandora)> wtf pan
+<[Ghosts]:Sleeping[Yetti]> What, TA?
+<('Pandora', 'Assassin')> lucky shot
+<vz> argh!
+<('Pandora', 'Assassin')> what, PY
+ahmed has map crc: 0x018a9e32 (server: 0x018a9e32)
+<[Ghosts]:Sleeping[Yetti]> PY? '-'
+<('Pandora', 'Assassin')> pzop
+<('Pandora', 'Assassin')> pandora yetti
+<('Pandora', 'Assassin')> whatever
+<[Ghosts]:Sleeping[Yetti]> lol
+<('Pandora', 'Assassin')> char pandora_yetti_acronym[] = {'P', 'Y'};
+<('Pandora', 'Assassin')> pzup
+<('Pandora', 'Assassin')> ap u suck
+<vz> suck it
+<(Assassin, Pandora)> I love the speed at which you fucked off my bridge voz
+('Pandora', 'Assassin') quarantined ahmed
+<('Pandora', 'Assassin')> ahmed, you lag too extremely
+<(Assassin, Pandora)> >too extremely
+<(Assassin, Pandora)> engrish
+<('Pandora', 'Assassin')> yeahik
+<('Pandora', 'Assassin')> i reread and thought urgh
+<Scatter >Holidays!<> ns
+<ahmed> hey guys can i join the game
+<marioxcc> vz is just hiding
+<Scatter >Holidays!<> hi
+<marioxcc> waiting for the action to end and for others to do the work
+<vz> haha
+<('Pandora', 'Assassin')> ahmed, sorry, no, you lag too much
+<vz> nice shot
+<('Pandora', 'Assassin')> pzap!
+<('Pandora', 'Assassin')> no u+
+<marioxcc> ahmed: try another server
+<marioxcc> one which has low "ping"
+<ahmed> okey
+<('Pandora', 'Assassin')> the other pandora sucks
+ahmed has left the game (normal, 11 players)
+<('Pandora', 'Assassin')> pzüp
+<(Assassin, Pandora)> oh shit never saw him lol
+<('Pandora', 'Assassin')> wallhax
+<(Assassin, Pandora)> benhemmer
+<('Pandora', 'Assassin')> cmon panda
+<(Assassin, Pandora)> ay
+<('Pandora', 'Assassin')> kill da pissar
+<[Ghosts]:Sleeping[Yetti]> pong in the moment :|
+<(Assassin, Pandora)> water u saying
+<('Pandora', 'Assassin')> crapz
+<[Ghosts]:|/-Itachi-/|> FUCKING -.-"
+<('Pandora', 'Assassin')> pzöp
+<[Ghosts]:|/-Itachi-/|> -.-"
+<(Assassin, Pandora)> -.-"
+<('Pandora', 'Assassin')> gotcha miguel/itachi
+<('Pandora', 'Assassin')> "-.-
+<[Ghosts]:|/-Itachi-/|> no. -.-" 
+<(Assassin, Pandora)> ""-.-""
+<[Ghosts]:Sleeping[Yetti]> '='
+<('Pandora', 'Assassin')> oh i do think so
+<(Assassin, Pandora)> I'm a moose
+<[Ghosts]:|/-Itachi-/|> -.-"
+<(Assassin, Pandora)> -"."-
+<('Pandora', 'Assassin')> dat distance I killed the red rogue  ~161 m noscope headshot
+<(Assassin, Pandora)> kawaii
+<[Ghosts]:Sleeping[Yetti]> argh!
+<('Pandora', 'Assassin')> kawai = piano brand
+<[Ghosts]:Sleeping[Yetti]> damn it!
+<[Ghosts]:Sleeping[Yetti]> damn it!
+<[Ghosts]:Sleeping[Yetti]> damn it!
+<(Assassin, Pandora) (to team alpha)> sorry
+<('Pandora', 'Assassin')> u serious?
+<[Ghosts]:Sleeping[Yetti]> argh!
+<[Ghosts]:|/-Itachi-/|> argh!
+<(Assassin, Pandora)> rekt
+<marioxcc> assasin writes as a stupid teenager
+<[Ghosts]:Sleeping[Yetti]> I can't play :|
+<[Ghosts]:Sleeping[Yetti]> ping
+<(Assassin, Pandora)> hitachi is rekt
+<[Ghosts]:|/-Itachi-/|> acer -.-"
+<[Ghosts]:|/-Itachi-/|> -.-"
+<marioxcc> "rekt", "gonna", "gotta", etc.
+<[Ghosts]:Sleeping[Yetti]> marioxcc: it's natural from him '='
+<(Assassin, Pandora)> Mario, warning
+<marioxcc> for?
+<(Assassin, Pandora)> you're being unhealthy 
+<(Assassin, Pandora)> tut tut tut
+<[Ghosts]:Sleeping[Yetti]> (> ;-;)>
+stats success: game statistics recorded (16860) http://redeclipse.net/stats/game/16860
+<('Pandora', 'Assassin')> argh!
+<[Ghosts]:|/-Itachi-/|> -.-"
+<Scatter >Holidays!<> gg
+<marioxcc> warning for?
+<('Pandora', 'Assassin')> y u let me fight the last match
+demo survivor-hard-basic deathmatch on depot recorded 2017-06-26 23:04.28 UTC [1.52MB]
+<(Assassin, Pandora)> Please don't be toxic. Thanks!
+The Rouge Rogue suggests: ffa deathmatch on error
+<marioxcc> "toxic"?
+<('Pandora', 'Assassin')> marioxcc, people's grammer is none of your business
+[Ghosts]:|/-Itachi-/| suggests: deathmatch on abuse
+marioxcc suggests: defend-and-control on deli
+<('Pandora', 'Assassin')> lmgtfy.com
+<marioxcc> "toxic"?
+('Pandora', 'Assassin') suggests: quick capture-the-flag on darkness
+Hastrman suggests: survivor-hard-basic deathmatch on abuse
+Scatter >Holidays!< suggests: survivor-hard-basic deathmatch on abuse
+[Ghosts]:|/-Itachi-/| suggests: survivor-hard-basic deathmatch on abuse
+<('Pandora', 'Assassin')> lmgtfy.com/?s=toxic
+Scatter >Holidays!< suggests: quick capture-the-flag on darkness
+vote passed: quick capture-the-flag on darkness
+The Rouge Rogue has map crc: 0x77c492eb (server: 0x77c492eb)
+Rabid Wombat has map crc: 0x77c492eb (server: 0x77c492eb)
+('Pandora', 'Assassin') has map crc: 0x77c492eb (server: 0x77c492eb)
+Hastrman has map crc: 0x77c492eb (server: 0x77c492eb)
+Scatter >Holidays!< has map crc: 0x77c492eb (server: 0x77c492eb)
+[Ghosts]:|/-Itachi-/| has map crc: 0x77c492eb (server: 0x77c492eb)
+[Ghosts]:Sleeping[Yetti] has map crc: 0x77c492eb (server: 0x77c492eb)
+(Assassin, Pandora) has map crc: 0x77c492eb (server: 0x77c492eb)
+Norakam has map crc: 0x77c492eb (server: 0x77c492eb)
+marioxcc has map crc: 0x77c492eb (server: 0x77c492eb)
+vz has map crc: 0x77c492eb (server: 0x77c492eb)
+<marioxcc> no, it lagged
+<marioxcc> and I wrote it a second time.
+requesting game information from Scatter >Holidays!<..
+game information received, starting..
+<marioxcc> you can not tell me what to chat about, assasin
+<[Ghosts]:Sleeping[Yetti]> oh CTF
+<(Assassin, Pandora)> yes we can
+<('Pandora', 'Assassin') (to team alpha)> go go go!
+<marioxcc> no. it's not in the rules.
+<[Ghosts]:Sleeping[Yetti]> Activating Teleport's skill. Info: lvl 999999
+<marioxcc> and neither is not being "toxic"
+<(Assassin, Pandora)> Yes it is
+<marioxcc> and if it was, what about when you told me "idiot"?
+<('Pandora', 'Assassin')> covered by the guidelines, not forbidden
+<(Assassin, Pandora)> I am not debating this with you, you're a mental deadzone
+<[Ghosts]:Sleeping[Yetti]> :|
+<('Pandora', 'Assassin')> nice shot
+<[Ghosts]:|/-Itachi-/|> ...
+Jun 27 05:06:35 <redroid>...!
+<('Pandora', 'Assassin')> last warning, marioxcc
+<[Ghosts]:Sleeping[Yetti]> damn it!
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> go go go!
+<marioxcc> assasin: warning for what?
+<('Pandora', 'Assassin')> (strike 2)
+<marioxcc> for doing what?
+<[Ghosts]:Sleeping[Yetti]> damn it!
+<marioxcc> how I am breaking the rules?
+<('Pandora', 'Assassin')> I dont justify against you whiny pedantic shitnoob
+<Rabid Wombat> sry
+<marioxcc> assasin: and that is not being "toxic"?
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> go go go!
+<('Pandora', 'Assassin')> haha
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> go go go!
+<('Pandora', 'Assassin')> hey, acer, am i toxic?
+<('Pandora', 'Assassin') (to team alpha)> just say no
+<('Pandora', 'Assassin') (to team alpha)> :D
+<[Ghosts]:Sleeping[Yetti]> argh!
+<('Pandora', 'Assassin')> argh!
+<(Assassin, Pandora)> not really
+<('Pandora', 'Assassin')> knew it
+<(Assassin, Pandora)> You're rough, but not toxic
+<[Ghosts]:Sleeping[Yetti]> :|
+<[Ghosts]:Sleeping[Yetti]> |:
+<[Ghosts]:Sleeping[Yetti]> :|
+<[Ghosts]:Sleeping[Yetti]> |:
+<[Ghosts]:|/-Itachi-/|> argh!
+<[Ghosts]:Sleeping[Yetti]> haha
+<('Pandora', 'Assassin')> hey, stop shooting
+<[Ghosts]:|/-Itachi-/|> what the
+<Rabid Wombat> ooops
+<(Assassin, Pandora)> #learnthedifference
+<('Pandora', 'Assassin')> its not allowed by the guidelines
+<[Ghosts]:Sleeping[Yetti]> argh!
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> go go go!
+<marioxcc> what is not allowed?
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> go go go!
+<('Pandora', 'Assassin') (to team alpha)> go go go!
+<[Ghosts]:Sleeping[Yetti]> argh!
+<marioxcc> it *explicitly* says that "cussing" is allowed.
+<('Pandora', 'Assassin')> hey, stop shooting
+<('Pandora', 'Assassin')> its not allowed by the guidelines
+<(Assassin, Pandora) (to team alpha)> go go go!
+<[Ghosts]:Sleeping[Yetti]> damn it!
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> sorry
+<Scatter >Holidays!<> argh
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> sorry
+<[Ghosts]:|/-Itachi-/|> >-<"
+<marioxcc> assasin: just remember you're one more contributor. you're not the one who makes the rules.
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> go go go!
+<(Assassin, Pandora)> There are two of us
+<marioxcc> the rules are set and you have to abide by them just like anybody else.
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> ;-;
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> (> ;-;)> MIG
+<Hastrman (to team omega)> sry
+<marioxcc> I mean "theassasin"
+('Pandora', 'Assassin') added ban on marioxcc: for being toxic
+marioxcc has left the game (address is banned, 10 players)
+<(Assassin, Pandora)> thanks
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> go go go!
+<[Ghosts]:|/-Itachi-/|> >-<
+<(Assassin, Pandora)> pew fireworks
+<('Pandora', 'Assassin')> I am 100 times more in a position to make up rules :D
+<[Ghosts]:Sleeping[Yetti]> argh!
+<[Ghosts]:Sleeping[Yetti]> argh!
+<('Pandora', 'Assassin')> i need him to tell me about my position lool
+<(Assassin, Pandora)> lmao
+<[Ghosts]:Sleeping[Yetti]> nice aimbot, TA '-'
+<('Pandora', 'Assassin') (to team alpha)> sorry
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> sorry
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> no problem
+<(Assassin, Pandora)> nice shot
+<[Ghosts]:Sleeping[Yetti]> argh!
+foxydoxytroll255 has joined the game [1.5.8-win64-stable] (11 players)
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> go go go!
+<(Assassin, Pandora) (to team alpha)> go go go!
+<[Ghosts]:Sleeping[Yetti]> argh!
+<('Pandora', 'Assassin') (to team alpha)> hang on
+<[Ghosts]:|/-Itachi-/|> ARGH my eye hurts -.-"
+<[Ghosts]:Sleeping[Yetti]> damn it!
+foxydoxytroll255 has map crc: 0x77c492eb (server: 0x77c492eb)
+<(Assassin, Pandora) (to team alpha)> go go go!
+<[Ghosts]:|/-Itachi-/|> argh!
+<(Assassin, Pandora) (to team alpha)> go go go!
+<[Ghosts]:Sleeping[Yetti]> argh!
+<(Assassin, Pandora) (to team alpha)> rocket
+<[Ghosts]:Sleeping[Yetti]> nice shot
+<('Pandora', 'Assassin') (to team alpha)> hang on
+<[Ghosts]:|/-Itachi-/|> argh!
+<[Ghosts]:Sleeping[Yetti]> argh!
+<[Ghosts]:|/-Itachi-/|> argh!
+<[Ghosts]:|/-Itachi-/|> argh!
+<[Ghosts]:Sleeping[Yetti]> nooooooooooooo
+<[Ghosts]:|/-Itachi-/|> argh!
+<('Pandora', 'Assassin') (to team alpha)> go go go!
+<('Pandora', 'Assassin') (to team alpha)> go go go!
+<('Pandora', 'Assassin') (to team alpha)> go go go!
+<[Ghosts]:Sleeping[Yetti]> argh!
+vz has left the game (normal, 10 players)
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> go go go!
+<('Pandora', 'Assassin')> oh wow, dude's whining on IRC again
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> go go go!
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> yes
+<(Assassin, Pandora)> really
+<('Pandora', 'Assassin') (to team alpha)> go go go!
+<[Ghosts]:Sleeping[Yetti]> argh!
+<('Pandora', 'Assassin')> yeah
+<(Assassin, Pandora)> lmao look at irc
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> yes
+<(Assassin, Pandora)> sorry
+<('Pandora', 'Assassin')> /kick acer for being a shitnoob
+<(Assassin, Pandora)> lmao
+<('Pandora', 'Assassin')> hey dont insult higher privs :D
+<(Assassin, Pandora) (to team alpha)> go go go!
+<[Ghosts]:Sleeping[Yetti]> argh!
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> sorry
+<[Ghosts]:|/-Itachi-/|> ;-;
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> sorry
+<foxydoxytroll255> yu
+<('Pandora', 'Assassin') (to team alpha)> sorry
+<[Ghosts]:Sleeping[Yetti]> argh!
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> yes
+<[Ghosts]:Sleeping[Yetti] (to team alpha)> go go go!
+<[Ghosts]:Sleeping[Yetti]> argh!
+The Rouge Rogue has left the game (normal, 9 players)
+<[Ghosts]:Sleeping[Yetti]> haha
+<('Pandora', 'Assassin')> nice shot
+stats success: game statistics recorded (16861) http://redeclipse.net/stats/game/16861
+<[Ghosts]:Sleeping[Yetti]> gg XD
+<Scatter >Holidays!<> gg
+<(Assassin, Pandora)> lol he killed exactly no one
+<Rabid Wombat> gg
+demo quick capture-the-flag on darkness recorded 2017-06-26 23:15.33 UTC [2.32MB]

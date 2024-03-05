@@ -1,0 +1,17 @@
+--- redeclipse.sh.orig	2015-07-31 06:40:39.486378000 +0100
++++ redeclipse.sh	2015-07-31 06:50:38.036378000 +0100
+@@ -130,7 +130,13 @@
+ redeclipse_update() {
+     chmod +x "${REDECLIPSE_PATH}/bin/update.sh"
+     REDECLIPSE_CALLED="true"
+-    . "${REDECLIPSE_PATH}/bin/update.sh"
++     . "${REDECLIPSE_PATH}/bin/update.sh" | zenity --progress \
++                                               --pulsate \
++                                               --title="Red Eclipse" \
++                                               --text="Checking for updates..." \
++                                               --auto-close \
++                                               --no-cancel \
++                                               --width=300
+     if [ $? -eq 0 ]; then
+         redeclipse_runit
+         return $?

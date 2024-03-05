@@ -1,0 +1,212 @@
+Index: bin/amd64/redeclipse_linux
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: src/game/auth.h
+===================================================================
+--- src/game/auth.h	(revision 7041)
++++ src/game/auth.h	(working copy)
+@@ -151,7 +151,7 @@
+             ci->handle[0] = 0;
+             int others = 0;
+             loopv(clients) if((clients[i]->privilege&PRIV_TYPE) >= PRIV_MODERATOR || clients[i]->local) others++;
+-            if(!others) mastermode = MM_OPEN;
++            if(!others) G(mastermode) = MM_OPEN;
+             if(!val && (privilege&PRIV_TYPE) >= PRIV_ELEVATED)
+                 formatstring(msg)("\fy%s relinquished \fs\fc%s\fS status", colourname(ci), privname(privilege));
+         }
+@@ -208,7 +208,7 @@
+         uint ip = getclientip(ci->clientnum);
+         if(!ip || !checkipinfo(control, ipinfo::EXCEPT, ip))
+         {
+-            if(mastermode >= MM_PRIVATE || serverpass[0] || (G(connectlock) && !haspriv(ci, G(connectlock)))) return DISC_PASSWORD;
++            if(G(mastermode) >= MM_PRIVATE || serverpass[0] || (G(connectlock) && !haspriv(ci, G(connectlock)))) return DISC_PASSWORD;
+             ipinfo *info = checkipinfo(control, ipinfo::BAN, ip);
+             if(info)
+             {
+Index: src/game/client.cpp
+===================================================================
+--- src/game/client.cpp	(revision 7041)
++++ src/game/client.cpp	(working copy)
+@@ -412,7 +412,6 @@
+     ICOMMAND(0, getplayervanity, "", (), result(game::player1->vanity));
+     ICOMMAND(0, getplayervitem, "bi", (int *n, int *v), getvitem(game::player1, *n, *v));
+ 
+-    ICOMMAND(0, mastermode, "i", (int *val), addmsg(N_MASTERMODE, "ri", *val));
+     ICOMMAND(0, getplayername, "", (), result(game::player1->name));
+     ICOMMAND(0, getplayercolour, "i", (int *m), intret(*m >= 0 ? game::getcolour(game::player1, *m) : game::player1->colour));
+     ICOMMAND(0, getplayermodel, "", (), intret(game::player1->model));
+Index: src/game/game.h
+===================================================================
+--- src/game/game.h	(revision 7041)
++++ src/game/game.h	(working copy)
+@@ -350,11 +350,11 @@
+ #define MM_MODE 0xF
+ #define MM_AUTOAPPROVE 0x1000
+ #define MM_FREESERV (MM_AUTOAPPROVE|MM_MODE)
+-#define MM_VETOSERV ((1<<MM_OPEN)|(1<<MM_VETO))
++#define MM_VETOSERV ((1<<MM_OPEN)) // I have no idea what this does. I'm just hoping for the best, really.
+ #define MM_COOPSERV (MM_AUTOAPPROVE|MM_VETOSERV|(1<<MM_LOCKED))
+ #define MM_OPENSERV (MM_AUTOAPPROVE|(1<<MM_OPEN))
+ 
+-enum { MM_OPEN = 0, MM_VETO, MM_LOCKED, MM_PRIVATE, MM_PASSWORD };
++enum { MM_OPEN = 0, MM_LOCKED, MM_PRIVATE, MM_PASSWORD };
+ enum { SINFO_NONE = 0, SINFO_STATUS, SINFO_NAME, SINFO_PORT, SINFO_QPORT, SINFO_DESC, SINFO_MODE, SINFO_MUTS, SINFO_MAP, SINFO_TIME, SINFO_NUMPLRS, SINFO_MAXPLRS, SINFO_PING, SINFO_MAX };
+ enum { SSTAT_OPEN = 0, SSTAT_LOCKED, SSTAT_PRIVATE, SSTAT_FULL, SSTAT_UNKNOWN, SSTAT_MAX };
+ 
+Index: src/game/server.cpp
+===================================================================
+--- src/game/server.cpp	(revision 7041)
++++ src/game/server.cpp	(working copy)
+@@ -412,7 +412,7 @@
+     }
+ 
+     string smapname;
+-    int gamemode = G_EDITMODE, mutators = 0, gamemillis = 0, gamelimit = 0, mastermode = MM_OPEN;
++    int gamemode = G_EDITMODE, mutators = 0, gamemillis = 0, gamelimit = 0;
+     int interm = 0, timeremaining = -1, oldtimelimit = -1, gamewait = 1, lastwaitinfo = 0, lastteambalance = 0, nextteambalance = 0, lastrotatecycle = 0;
+     bool hasgameinfo = false, maprequest = false, inovertime = false, updatecontrols = false, mapsending = false, shouldcheckvotes = false, firstblood = false;
+     enet_uint32 lastsend = 0;
+@@ -968,7 +968,7 @@
+     {
+         setpause(false);
+         setmod(sv_botoffset, 0);
+-        if(G(resetmmonend)) { mastermode = MM_OPEN; resetallows(); }
++        if(G(resetmmonend)) { G(mastermode) = MM_OPEN; resetallows(); }
+         if(G(resetbansonend)) resetbans();
+         if(G(resetmutesonend)) resetmutes();
+         if(G(resetlimitsonend)) resetlimits();
+@@ -1027,7 +1027,6 @@
+         switch(type)
+         {
+             case MM_OPEN: return "open";
+-            case MM_VETO: return "veto";
+             case MM_LOCKED: return "locked";
+             case MM_PRIVATE: return "private";
+             case MM_PASSWORD: return "password";
+@@ -1035,6 +1034,24 @@
+         }
+     }
+ 
++    void mastermodechanged()
++    {
++        resetallows();
++        if(G(mastermode) >= MM_PRIVATE)
++        {
++            loopv(clients)
++            {
++                ipinfo &allow = control.add();
++                allow.ip = getclientip(clients[i]->clientnum);
++                allow.mask = 0xFFFFFFFF;
++                allow.type = ipinfo::ALLOW;
++                allow.time = totalmillis ? totalmillis : 1;
++                allow.reason = newstring("mastermode set private");
++            }
++        }
++        srvoutf(-3, "\fymastermode is now \fs\fc%d\fS (\fs\fc%s\fS)", G(mastermode), mastermodename(G(mastermode)));
++    }
++
+     int numclients(int exclude, bool nospec, int actortype)
+     {
+         int n = 0;
+@@ -2292,7 +2309,7 @@
+         setpause(false);
+         checkdemorecord(true);
+         setmod(sv_botoffset, 0);
+-        if(G(resetmmonend) >= 2) { mastermode = MM_OPEN; resetallows(); }
++        if(G(resetmmonend) >= 2) { G(mastermode) = MM_OPEN; resetallows(); }
+         if(G(resetvarsonend) >= 2) resetgamevars(true, false);
+         if(G(resetbansonend) >= 2) resetbans();
+         if(G(resetmutesonend) >= 2) resetmutes();
+@@ -2399,7 +2416,7 @@
+             srvmsgft(ci->clientnum, CON_EVENT, "\fraccess denied, you must be a local client to start a %s game", gametype[reqmode].name);
+             return;
+         }
+-        bool hasvote = false, hasveto = (mastermode >= MM_VETO && haspriv(ci, G(vetolock))) || !numclients(ci->clientnum);
++        bool hasvote = false, hasveto = (G(voteveto) && haspriv(ci, G(vetolock))) || !numclients(ci->clientnum);
+         if(!hasveto)
+         {
+             if(ci->lastvote && totalmillis-ci->lastvote <= G(votewait)) return;
+@@ -2751,7 +2768,7 @@
+             {
+                 if(ci->state.quarantine) return false;
+                 if(ci->state.actortype == A_PLAYER)
+-                    if(mastermode >= MM_LOCKED && ip && !checkipinfo(control, ipinfo::ALLOW, ip) && !haspriv(ci, lock, "spawn"))
++                    if(G(mastermode) >= MM_LOCKED && ip && !checkipinfo(control, ipinfo::ALLOW, ip) && !haspriv(ci, lock, "spawn"))
+                         return false;
+                 if(ci->state.state == CS_ALIVE || ci->state.state == CS_WAITING) return false;
+                 if(ci->state.lastdeath && gamemillis-ci->state.lastdeath <= DEATHMILLIS) return false;
+@@ -2771,7 +2788,7 @@
+             case ALST_EDIT: // edit on/off
+             {
+                 if(ci->state.quarantine || ci->state.actortype != A_PLAYER || !m_edit(gamemode)) return false;
+-                if(mastermode >= MM_LOCKED && ip && !checkipinfo(control, ipinfo::ALLOW, ip) && !haspriv(ci, lock, "edit")) return false;
++                if(G(mastermode) >= MM_LOCKED && ip && !checkipinfo(control, ipinfo::ALLOW, ip) && !haspriv(ci, lock, "edit")) return false;
+                 break;
+             }
+             default: break;
+@@ -4604,7 +4621,7 @@
+         putint(p, mutators); // 3
+         putint(p, timeremaining); // 4
+         putint(p, G(serverclients)); // 5
+-        putint(p, serverpass[0] ? MM_PASSWORD : (m_local(gamemode) ? MM_PRIVATE : mastermode)); // 6
++        putint(p, serverpass[0] ? MM_PASSWORD : (m_local(gamemode) ? MM_PRIVATE : G(mastermode))); // 6
+         putint(p, numgamevars); // 7
+         putint(p, numgamemods); // 8
+         putint(p, versionmajor); // 9
+@@ -5916,34 +5933,6 @@
+                     break;
+                 }
+ 
+-                case N_MASTERMODE:
+-                {
+-                    int mm = getint(p);
+-                    if(haspriv(ci, G(masterlock), "change mastermode") && mm >= MM_OPEN && mm <= MM_PRIVATE)
+-                    {
+-                        if(haspriv(ci, PRIV_ADMINISTRATOR) || (mastermask()&(1<<mm)))
+-                        {
+-                            mastermode = mm;
+-                            resetallows();
+-                            if(mastermode >= MM_PRIVATE)
+-                            {
+-                                loopv(clients)
+-                                {
+-                                    ipinfo &allow = control.add();
+-                                    allow.ip = getclientip(clients[i]->clientnum);
+-                                    allow.mask = 0xFFFFFFFF;
+-                                    allow.type = ipinfo::ALLOW;
+-                                    allow.time = totalmillis ? totalmillis : 1;
+-                                    allow.reason = newstring("mastermode set private");
+-                                }
+-                            }
+-                            srvoutf(-3, "\fymastermode is now \fs\fc%d\fS (\fs\fc%s\fS)", mastermode, mastermodename(mastermode));
+-                        }
+-                        else srvmsgft(sender, CON_EVENT, "\frmastermode %d (%s) is disabled on this server", mm, mastermodename(mm));
+-                    }
+-                    break;
+-                }
+-
+                 case N_CLRCONTROL:
+                 {
+                     int value = getint(p);
+Index: src/game/vars.h
+===================================================================
+--- src/game/vars.h	(revision 7041)
++++ src/game/vars.h	(working copy)
+@@ -29,6 +29,8 @@
+ 
+ GVAR(IDF_ADMIN, autoadmin, 0, 0, 1);
+ 
++GVAR(IDF_ADMIN, mastermode, MM_OPEN, MM_OPEN, MM_PASSWORD);
++
+ GVAR(IDF_ADMIN, queryinterval, 0, 5000, VAR_MAX); // rebuild client list for server queries this often
+ GVAR(IDF_ADMIN, masterinterval, 300000, 300000, VAR_MAX); // keep connection alive every this often
+ GVAR(IDF_ADMIN, connecttimeout, 5000, 15000, VAR_MAX); // disconnected when attempt exceeds this time
+@@ -145,6 +147,7 @@
+ GVAR(IDF_ADMIN, votestyle, 0, 2, 2); // 0 = votes don't pass mid-match, 1 = passes if votethreshold is met, 2 = passes if unanimous
+ GVAR(IDF_ADMIN, voteinterm, 0, 2, 3); // 0 = must wait entire time, 1 = passes if votethreshold is met, 2 = passes if unanimous, 3 = passes after waiting then selects a random vote
+ GFVAR(IDF_ADMIN, votethreshold, 0, 0.5f, 1); // auto-pass votes when this many agree
++GVAR(IDF_ADMIN, voteveto, 0, 0, 1); // lets mods force votes
+ 
+ GVAR(IDF_ADMIN, smallmapmax, 0, 6, VAR_MAX); // maximum number of players for a small map
+ GVAR(IDF_ADMIN, mediummapmax, 0, 12, VAR_MAX); // maximum number of players for a medium map
